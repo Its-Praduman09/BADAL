@@ -53,6 +53,21 @@ export default (sequelize, DataTypes) => {
       timestamps: false,
     }
   );
+  // associations
+
+  // Appointment.associate = (models) => {
+  //   Appointment.belongsTo(models.Clinics, {
+  //     foreignKey: "clinic_id",
+  //     targetKey: "id",
+  //     as: "clinic",
+  //   });
+
+  //   Appointment.belongsTo(models.User, {
+  //     foreignKey: "client_id",
+  //     targetKey: "user_id",
+  //     as: "client",
+  //   });
+  // };
 
   return Users;
 };
