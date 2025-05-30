@@ -6,7 +6,6 @@ export const AuthMiddleware = async (req, res, next) => {
   const session_id = req.headers["auth-key"];
 
   console.log("AuthMiddleware - authorization header:", authorizationHeader);
-  console.log("AuthMiddleware - session_id:", session_id);
 
   if (!authorizationHeader || !session_id) {
     return ApiResponse.unauthorized(res, "Unauthorized");

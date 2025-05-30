@@ -6,7 +6,6 @@ import {
 } from "../services/authService.js";
 import ApiResponse from "../utils/apiResponse.js";
 
-const JWT_SECRET = "your_jwt_secret_key";
 const ACCESS_TOKEN_EXPIRY = "1h";
 const REFRESH_TOKEN_EXPIRY = "7d";
 

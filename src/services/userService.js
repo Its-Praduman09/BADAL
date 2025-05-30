@@ -2,8 +2,6 @@ import db from "../models/index.js";
 const { Users } = db;
 import bcrypt from "bcryptjs";
 
-console.log("USER", Users);
-
 export const createUserService = async (req) => {
   try {
     const { name, email, phone, password, country_code } = req.body;
